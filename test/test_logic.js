@@ -130,9 +130,9 @@ var ctx = {
   // 8) Fuente playlist (formato real) + respaldo por nombre; la emisora no esta en la cola
   var tmpd = fs.mkdtempSync(path.join(os.tmpdir(), 'pl'));
   fs.writeFileSync(path.join(tmpd, 'Radio1'), JSON.stringify([
-    { albumart: 'x', service: 'webradio', title: 'SER Valencia', uri: 'https://playerservices.streamtheworld.com/pls/SER_VALENCIA.pls?DIST=TuneIn' },
+   
     { service: 'mpd', title: 'Cancion local', uri: 'music-library/USB/a.mp3' },
-    { service: 'webradio', title: 'Rock FM', uri: 'https://rockfm-cope-rrcast.flumotion.com/cope/rockfm-low.mp3' }
+ 
   ]));
   p.playlistDir = tmpd;
   p.config.set('station_source', 'playlist');
@@ -141,7 +141,7 @@ var ctx = {
   assert.strictEqual(st.length, 2);
   p.config.set('detect_secs', 120);
   p.switching = false; played = [];
-  state = { status: 'play', service: 'webradio', uri: 'https://23563.live.streamtheworld.com/SER_VALENCIA_SC', title: 'SER Valencia' };
+ 
   p.tick(); assert.strictEqual(p.workerUri, st[0].uri);
   feedTopic(8); await wait();
   assert.deepStrictEqual(played, [st[1].uri]);
@@ -153,7 +153,7 @@ var ctx = {
     { service: 'mpd', title: 'Otra', uri: 'music-library/x.mp3' }
   ];
   queueClears = 0; played = [];
-  state = { status: 'play', service: 'webradio', uri: 'https://23563.live.streamtheworld.com/SER_VALENCIA_SC', title: 'SER Valencia', position: 0 };
+ 
   p.switching = false; p.tick();
   feedTopic(8); await wait();
   assert.deepStrictEqual(played, [st[1].uri]);
