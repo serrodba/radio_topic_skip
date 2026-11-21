@@ -4,7 +4,7 @@
   "description": "Salta a la siguiente emisora de una lista cuando detecta una temática (p. ej. fútbol) durante un tiempo configurable. Reconocimiento de voz offline con Vosk.",
   "main": "index.js",
   "scripts": { "test": "node test/test_logic.js" },
-  "author": "Sergio Rodríguez Ballester, Ingeniero Técnico Topógrafo",
+  "author": "",
   "license": "MIT",
   "volumio_info": {
     "prettyName": "Salto de emisora por temática",
