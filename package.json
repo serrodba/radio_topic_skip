@@ -1,0 +1,24 @@
+{
+  "name": "radio_topic_skip",
+  "version": "0.1.6",
+  "description": "Salta a la siguiente emisora de una lista cuando detecta una temática (p. ej. fútbol) durante un tiempo configurable. Reconocimiento de voz offline con Vosk.",
+  "main": "index.js",
+  "scripts": { "test": "node test/test_logic.js" },
+  "author": "Sergio Rodríguez Ballester, Ingeniero Técnico Topógrafo",
+  "license": "MIT",
+  "volumio_info": {
+    "prettyName": "Salto de emisora por temática",
+    "icon": "fa-random",
+    "plugin_type": "system_controller",
+    "architectures": ["armhf", "amd64", "i386"],
+    "os": ["buster", "bookworm"],
+    "details": "Analiza la radio que suena y cambia de emisora si detecta la temática configurada.",
+    "changelog": "0.1.6 desplegable con las playlists de Volumio; 0.1.5 desplegable de sensibilidad (4 niveles + personalizada); 0.1.4 avanza por la cola sin borrarla, worker en tiempo real (audio mas reciente), pausa entre bloques; 0.1.3 fuente Playlist de Volumio, resolucion .pls/.m3u, palabras ampliadas, min_hits 2.5; 0.1.2 cffi desde piwheels; 0.1.1 soporte Volumio 4 (Bookworm), vosk en usuario volumio, sin unzip"
+  },
+  "engines": { "node": ">=14", "volumio": ">=3" },
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "kew": "^0.7.0",
+    "v-conf": "^1.4.0"
+  }
+}

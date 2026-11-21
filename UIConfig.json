@@ -1,0 +1,198 @@
+{
+  "page": {
+    "label": "TRANSLATE.PLUGIN_NAME"
+  },
+  "sections": [
+    {
+      "id": "section_main",
+      "element": "section",
+      "label": "TRANSLATE.SECTION_MAIN",
+      "icon": "fa-random",
+      "onSave": {
+        "type": "controller",
+        "endpoint": "system_controller/radio_topic_skip",
+        "method": "saveSettings"
+      },
+      "saveButton": {
+        "label": "TRANSLATE.SAVE",
+        "data": [
+          "enabled",
+          "station_source",
+          "playlist_name",
+          "stations_list",
+          "sensitivity",
+          "detect_secs",
+          "topic_ratio",
+          "chunk_secs",
+          "min_hits",
+          "pause_secs",
+          "keywords_file",
+          "debug"
+        ]
+      },
+      "content": [
+        {
+          "id": "enabled",
+          "element": "switch",
+          "label": "TRANSLATE.ENABLED",
+          "doc": "TRANSLATE.ENABLED_DOC",
+          "value": false
+        },
+        {
+          "id": "station_source",
+          "element": "select",
+          "label": "TRANSLATE.SOURCE",
+          "doc": "TRANSLATE.SOURCE_DOC",
+          "value": {
+            "value": "myradios",
+            "label": "TRANSLATE.SOURCE_MYRADIOS"
+          },
+          "options": [
+            {
+              "value": "myradios",
+              "label": "TRANSLATE.SOURCE_MYRADIOS"
+            },
+            {
+              "value": "playlist",
+              "label": "TRANSLATE.SOURCE_PLAYLIST"
+            },
+            {
+              "value": "list",
+              "label": "TRANSLATE.SOURCE_LIST"
+            }
+          ]
+        },
+        {
+          "id": "playlist_name",
+          "element": "select",
+          "label": "TRANSLATE.PLAYLIST",
+          "doc": "TRANSLATE.PLAYLIST_DOC",
+          "value": {
+            "value": "Radio1",
+            "label": "Radio1"
+          },
+          "visibleIf": {
+            "field": "station_source",
+            "value": "playlist"
+          },
+          "options": []
+        },
+        {
+          "id": "stations_list",
+          "element": "input",
+          "type": "text",
+          "label": "TRANSLATE.STATIONS",
+          "doc": "TRANSLATE.STATIONS_DOC",
+          "value": "",
+          "visibleIf": {
+            "field": "station_source",
+            "value": "list"
+          }
+        },
+        {
+          "id": "sensitivity",
+          "element": "select",
+          "label": "TRANSLATE.SENS",
+          "doc": "TRANSLATE.SENS_DOC",
+          "value": {
+            "value": "media",
+            "label": "TRANSLATE.SENS_MED"
+          },
+          "options": [
+            {
+              "value": "baja",
+              "label": "TRANSLATE.SENS_LOW"
+            },
+            {
+              "value": "media",
+              "label": "TRANSLATE.SENS_MED"
+            },
+            {
+              "value": "alta",
+              "label": "TRANSLATE.SENS_HIGH"
+            },
+            {
+              "value": "muy_alta",
+              "label": "TRANSLATE.SENS_VHIGH"
+            },
+            {
+              "value": "custom",
+              "label": "TRANSLATE.SENS_CUSTOM"
+            }
+          ]
+        },
+        {
+          "id": "detect_secs",
+          "element": "input",
+          "type": "number",
+          "label": "TRANSLATE.DETECT",
+          "doc": "TRANSLATE.DETECT_DOC",
+          "value": 90,
+          "visibleIf": {
+            "field": "sensitivity",
+            "value": "custom"
+          }
+        },
+        {
+          "id": "topic_ratio",
+          "element": "input",
+          "type": "number",
+          "label": "TRANSLATE.RATIO",
+          "doc": "TRANSLATE.RATIO_DOC",
+          "value": 50,
+          "visibleIf": {
+            "field": "sensitivity",
+            "value": "custom"
+          }
+        },
+        {
+          "id": "chunk_secs",
+          "element": "input",
+          "type": "number",
+          "label": "TRANSLATE.CHUNK",
+          "doc": "TRANSLATE.CHUNK_DOC",
+          "value": 10,
+          "visibleIf": {
+            "field": "sensitivity",
+            "value": "custom"
+          }
+        },
+        {
+          "id": "min_hits",
+          "element": "input",
+          "type": "number",
+          "label": "TRANSLATE.MINHITS",
+          "doc": "TRANSLATE.MINHITS_DOC",
+          "value": 2.5,
+          "visibleIf": {
+            "field": "sensitivity",
+            "value": "custom"
+          }
+        },
+        {
+          "id": "pause_secs",
+          "element": "input",
+          "type": "number",
+          "label": "TRANSLATE.PAUSE",
+          "doc": "TRANSLATE.PAUSE_DOC",
+          "value": 0
+        },
+        {
+          "id": "keywords_file",
+          "element": "input",
+          "type": "text",
+          "label": "TRANSLATE.KEYWORDS",
+          "doc": "TRANSLATE.KEYWORDS_DOC",
+          "value": ""
+        },
+        {
+          "id": "debug",
+          "element": "switch",
+          "label": "TRANSLATE.DEBUG",
+          "doc": "TRANSLATE.DEBUG_DOC",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

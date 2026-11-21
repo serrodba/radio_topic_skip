@@ -1,0 +1,98 @@
+# Palabras clave de la tematica "futbol".
+# Una expresion por linea. Opcional: ";peso" (por defecto 1).
+# Se ignoran mayusculas y tildes. Cada expresion cuenta 1 vez por bloque.
+# Las muy especificas pesan mas; las genericas (minuto, partido) menos.
+gol;1.5
+golazo;2
+penalti;2
+penalty;2
+fuera de juego;2
+corner;1.5
+saque de esquina;2
+saque de banda;2
+tarjeta amarilla;2
+tarjeta roja;2
+arbitro;1.5
+var;0.5
+porteria;1.5
+portero;1.5
+delantero;1.5
+defensa central;2
+centrocampista;2
+lateral derecho;2
+lateral izquierdo;2
+banquillo;1
+entrenador;1
+mister;1
+once inicial;2
+alineacion;1.5
+primera parte;1
+segunda parte;1
+descanso;0.5
+prorroga;1
+minuto;0.5
+partido;0.5
+estadio;1
+aficion;0.5
+remate;1.5
+chut;1.5
+disparo;1
+pase;0.5
+balon;1
+area;0.5
+falta;0.5
+larguero;2
+palo;0.5
+cabezazo;2
+contragolpe;1.5
+fichaje;1.5
+liga;1
+laliga;1.5
+champions;1.5
+copa del rey;1.5
+jornada;1
+clasificacion;0.5
+real madrid;1.5
+barcelona;0.5
+barca;1.5
+atletico;1
+valencia;0.5
+sevilla;0.5
+betis;1.5
+villarreal;1.5
+athletic;1.5
+levante;0.5
+# --- Ampliacion 20261121 tras prueba con SER Valencia ---
+futbol;2
+futbol club;2
+derbi;2
+goles;1.5
+partidos;0.5
+penaltis;2
+arbitros;1.5
+jugador;1
+jugadores;1
+convocatoria;1.5
+convocados;1.5
+titular;0.5
+suplente;1.5
+lesion;0.5
+equipo;0.5
+club;0.5
+temporada;0.5
+hinchas;1.5
+seleccion;0.5
+sevillista;2
+betico;2
+verdiblanco;2
+valencianista;2
+madridista;2
+azulgrana;2
+cule;1.5
+colchonero;2
+rojiblanco;1.5
+mestalla;2
+bernabeu;2
+pizjuan;2
+metropolitano;1
+camp nou;2

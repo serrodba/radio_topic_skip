@@ -1,0 +1,50 @@
+{
+  "enabled": {
+    "type": "boolean",
+    "value": false
+  },
+  "station_source": {
+    "type": "string",
+    "value": "myradios"
+  },
+  "stations_list": {
+    "type": "string",
+    "value": ""
+  },
+  "detect_secs": {
+    "type": "number",
+    "value": 90
+  },
+  "topic_ratio": {
+    "type": "number",
+    "value": 50
+  },
+  "chunk_secs": {
+    "type": "number",
+    "value": 10
+  },
+  "min_hits": {
+    "type": "number",
+    "value": 2.5
+  },
+  "keywords_file": {
+    "type": "string",
+    "value": ""
+  },
+  "debug": {
+    "type": "boolean",
+    "value": false
+  },
+  "playlist_name": {
+    "type": "string",
+    "value": "Radio1"
+  },
+  "pause_secs": {
+    "type": "number",
+    "value": 0
+  },
+  "sensitivity": {
+    "type": "string",
+    "value": "media"
+  }
+}
