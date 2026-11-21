@@ -1,7 +1,7 @@
 # radio_topic_skip · Plugin para Volumio 3.x y 4.x
 
 Versión 0.1.6 · 20261121
-Autor: Sergio Rodríguez Ballester, Ingeniero Técnico Topógrafo
+Autor: 
 
 Mientras suena una emisora de la lista, el plugin transcribe el audio sin conexión (con Vosk y un modelo pequeño en español) y busca palabras clave. Si durante el **tiempo de detección** el porcentaje de bloques de la temática supera el **umbral**, salta a la siguiente emisora. Al llegar a la última vuelve a la primera.
 
